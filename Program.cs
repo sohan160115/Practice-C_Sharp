@@ -1,4 +1,7 @@
-﻿using System;
+﻿
+
+using System;
+using Practice_C_Sharp.Math;
 
 namespace Practice_C_Sharp
 {
@@ -6,7 +9,24 @@ namespace Practice_C_Sharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+
+            var sohan = new Person();
+
+            sohan.firstName = "Mohammad";
+            sohan.lastName = "Sohan";
+
+            sohan.Introduce();
+
+            //Calculator cal = new Calculator();
+
+            var result= Calculator.add(1 , 5);
+
+            Console.WriteLine(result);
+
+
+
+
+
         }
     }
 }

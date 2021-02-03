@@ -10,22 +10,21 @@ namespace Practice_C_Sharp
         static void Main(string[] args)
         {
 
-            var sohan = new Person();
 
-            sohan.firstName = "Mohammad";
-            sohan.lastName = "Sohan";
+            var numbers = new int[3];
+            numbers[0] = 1;
 
-            sohan.Introduce();
+            Console.WriteLine(numbers[0]);
 
-            //Calculator cal = new Calculator();
+            Console.WriteLine(numbers[1]);
+            Console.WriteLine(numbers[2]);
 
-            var result= Calculator.add(1 , 5);
+            var flags = new bool[3];
 
-            Console.WriteLine(result);
-
-
-
-
+            flags[0] = true;
+            Console.WriteLine(flags[0]);
+            Console.WriteLine(flags[1]);
+            Console.WriteLine(flags[2]);
 
         }
     }

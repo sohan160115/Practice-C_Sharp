@@ -1,32 +1,34 @@
 ﻿
 
+
 using System;
-using System.Collections.Generic;
-using Practice_C_Sharp.Math;
 
 namespace Practice_C_Sharp
 {
+    public class Person2
+    {
+        private DateTime _date;
+
+        public void SetTime(DateTime date)
+        {
+            _date = date;
+        }
+
+        public DateTime getDate()
+        {
+            return _date;
+        }
+
+    }
     class Program
     {
         static void Main(string[] args)
         {
 
+            var per = new Person2();
+            per.SetTime(new DateTime(2020,1,1));
+            Console.WriteLine(per.getDate());
 
-            var numbers = new List<int>(){1,2,5,7,8};
-
-            numbers.Add(10);
-
-            numbers.AddRange(new int[3]{5,1,2});
-
-            foreach (var i in numbers)
-            {
-                Console.WriteLine(i);
-            }
-            Console.WriteLine();
-            Console.WriteLine(numbers.Count);
-
-            numbers.Clear();
-            Console.WriteLine(numbers.Count);
         }
     }
 }
